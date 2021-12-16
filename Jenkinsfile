@@ -1,6 +1,8 @@
 pipeline {
    agent any
-
+   tools {
+        maven 'maven-3.8.3'
+    }
    environment {
      // You must set the following environment variables
      // ORGANIZATION_NAME
